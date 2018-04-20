@@ -1,10 +1,17 @@
 {
   "name": "anti-form",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "form validation",
-  "main": "index.js",
+  "main": "dist/anti-form.es.js",
+  "browser": "dist/anti-form.umd.js",
+  "module": "dist/anti-form.es.js",
+  "cjs": "dist/anti-form.cjs.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "dev": "rollup -c -w",
+    "build": "rm -rf dist && rollup -c && npm run minify",
+    "minify": "uglifyjs $npm_package_browser -cm -o $npm_package_browser",
+    "release": "npm run build && npm run minify && standard-version && git push --follow-tags && npm publish --access=public"
   },
   "repository": {
     "type": "git",
