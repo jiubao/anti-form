@@ -1,0 +1,1 @@
+!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?t(exports):"function"==typeof define&&define.amd?define(["exports"],t):t(e["anti-form"]={})}(this,function(e){"use strict";e.name="anti-form",Object.defineProperty(e,"__esModule",{value:!0})});

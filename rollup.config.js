@@ -10,7 +10,7 @@ export default {
   output: [{
     file: cfg.browser,
     format: 'umd',
-    name: 'swipe-core'
+    name: 'anti-form'
   }, {
     file: cfg.module,
     format: 'es'
